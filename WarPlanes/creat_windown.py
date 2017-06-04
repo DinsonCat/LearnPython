@@ -35,7 +35,7 @@ class HeroPlane(object):
 
 class Bullet(object):
     def __init__(self, screen, x, y, ):
-        self.x = x + 39
+        self.x = x + 41
         self.y = y - 22
         self.screen = screen
         self.image = pygame.image.load("./image/bullet.png")
