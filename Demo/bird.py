@@ -10,7 +10,7 @@ s = """
 """
 a = re.findall(r"(http:.+?)\"", s)
 
-f=open("d:/test1.txt","a",encoding="utf-8")
+f = open("d:/test1.txt", "a", encoding="utf-8")
 for i in a:
     f.write(i)
     f.write("\n")
