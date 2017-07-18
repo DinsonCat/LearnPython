@@ -1,3 +1,1 @@
-s="dinson001"
-a=s.replace("001",str(""))
-print(a)
+print("\033[1;31mehhe\033[0m")
