@@ -74,6 +74,7 @@ def delete_file(file, key, mode):
 
 
 def search_file(file, old_word, new_word, mode):
+    print(file.base_name)
     dir_list = file.get_child()
     for name in dir_list:
         if name.find(old_word) is not -1:
@@ -81,7 +82,7 @@ def search_file(file, old_word, new_word, mode):
             print(new_name)
             file.rename_child(name, new_name)
         if mode == 2 and file.is_dir():
-            search_file(file.child_dir(name), old_word, new_word, mode)
+            search_file(File(file.child_dir(name)), old_word, new_word, mode)
     replace_mode()
 
 
