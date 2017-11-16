@@ -73,6 +73,7 @@ for item in lists:
             n = re.findall(r"(.+)【", item_names[1])
             result += "{\"name\":\"%s\",\"icon\":\"http://ondlsj2sn.bkt.clouddn.com/%s\"}," % (n[0], new_name)
 
+
     # 重命名
     old = root_url + os.sep + item + ".png"
     new = root_url + os.sep + new_name
