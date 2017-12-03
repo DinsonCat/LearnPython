@@ -45,6 +45,7 @@ for item in lists:
     item_names = item.split("-")
     new_name = get_file_name()
 
+
     if item_names[0] != current:
         current = item_names[0]
         if result.endswith(","):
